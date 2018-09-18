@@ -21,6 +21,7 @@ $data = array(
 $request = $client->post('/api/programmers', null, json_encode($data));
 $response = $request->send();
 
+
 $url = $response->getHeader('Location');
 $request = $client->get($url);
 $request = $client->get('/api/programmers/' . $nickname);
