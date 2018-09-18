@@ -26,6 +26,8 @@ $request = $client->get($url);
 $request = $client->get('/api/programmers/' . $nickname);
 $response = $request->send();
 
+$request = $client->get('/api/programmers');
+$response = $request->send();
 
 echo $response;
 echo "\n\n";
